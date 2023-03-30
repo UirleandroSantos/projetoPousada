@@ -72,6 +72,7 @@ header{
 /*Inicio do main/container-imagens*/
 .container-imagens{
     width: 100%;
+    margin: auto;
 }
 .imagens{
     max-width: 50%;
