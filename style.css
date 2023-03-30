@@ -31,13 +31,15 @@ header{
 /*Fim do header*/
 
 /*Inicio do main/container-principal*/
-.container-principal{
-    width: 100%;
+.container-banner{
+    width: 100vw;
     height: 100vh;
+    background-color: yellow;
     background-image: url(./img-fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,12 +55,13 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: auto;
 }
 /*Fim do main/container-principal*/
 
 /*Inicio do main/conteiner-secundario*/
 .container-secundario{
-    width: 100%;
+    width: 100vw;
 }
 .titulo{
     margin: 50px auto;
@@ -111,9 +114,13 @@ header{
 
 /*Inicio do main/container-rotas*/
 .container-mapa{
-    max-width: 1024px;
-    min-width: 512px;
+    width: 100vw;
     margin: auto;
+}
+iframe{
+    width: 100%;
+    min-width: 500px;
+    padding: 0 10px;
 }
 /*OBS o local mostrado no mapa é apenas para demonstrção*/
 
@@ -121,15 +128,16 @@ header{
 
 /*Inicio do main/container-sobre-a-pousada*/
 .sobre-pousada{
-    width: 100%;
+    width: 90%;
     
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 .largura-sobre-pousada{
     width: 1024px;
     margin: auto;
-    min-width: 500px;
+    min-width: 490px;
     
     display: flex;
     justify-content: center;
@@ -137,10 +145,10 @@ header{
 }
 .box-informacao{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 512px;
     max-width: 512px;
-    padding: 10px;
+    padding: 5px;
     flex-wrap: wrap;
 }
 .descricao{
@@ -162,11 +170,9 @@ header{
     background-color: #49997d;
     width: 100%;
     color: white;
-}
-footer{
     display: flex;
     flex-direction: column;
-    min-width: 512px;
+    min-width: 500px;
     flex-wrap: wrap;
 }
 .contatos{
