@@ -73,6 +73,8 @@ header{
 .container-imagens{
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .imagens{
     max-width: 60%;
@@ -108,8 +110,11 @@ header{
 /*Fim do main/container-imagens*/
 
 /*Inicio do main/container-rotas*/
-
-/* Não teve nada a ser feito nesse container*/
+.container-mapa{
+    max-width: 1024px;
+    min-width: 512px;
+    margin: auto;
+}
 /*OBS o local mostrado no mapa é apenas para demonstrção*/
 
 /*Fim do main/container-rotas*/
@@ -117,34 +122,38 @@ header{
 /*Inicio do main/container-sobre-a-pousada*/
 .sobre-pousada{
     width: 100%;
-    max-width: 100%;
-}
-.container-sobre-a-pousada{
-    max-width: 1024px;
-    min-width: 900px;
-    height: fit-content;
-    margin: 50px auto;
+    
     display: flex;
     flex-wrap: wrap;
 }
-.informacao{
+.largura-sobre-pousada{
+    width: 1024px;
+    margin: auto;
+    min-width: 500px;
+    
     display: flex;
-    justify-content: space-between;
-    max-width: calc(1024px /2);
-    min-width: 50%;
-    padding: 30px;
-}
-.textos{
-    display: flex;
-    height: 90%;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    flex-flow: wrap;
 }
-.imagem img{
+.box-informacao{
+    display: flex;
+    justify-content: space-around;
+    width: 512px;
+    max-width: 512px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.descricao{
+    word-wrap: break-word;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box-informacao img{
     width: 120px;
-    height: 120px;
-    margin: 0 5px;
+    height: 100px;
 }
 /*Fim do main/container-sobre-a-pousada*/
 
@@ -157,6 +166,7 @@ header{
 footer{
     display: flex;
     flex-direction: column;
+    min-width: 512px;
     flex-wrap: wrap;
 }
 .contatos{
