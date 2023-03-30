@@ -117,6 +117,7 @@ header{
 /*Inicio do main/container-sobre-a-pousada*/
 .sobre-pousada{
     width: 100%;
+    max-width: 100%;
 }
 .container-sobre-a-pousada{
     max-width: 1024px;
