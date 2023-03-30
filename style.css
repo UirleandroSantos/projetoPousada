@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    width: 100%;
+}
+.limita-largura{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.logo h1{
+    color: #3d3d3d;
+}
+.logo h1 span{
+    color: #6592c9;
+}
+.links-da-pagina a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+/*Fim do header*/
+
+/*Inicio do main/container-principal*/
+.container-principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-paragrafo{
+    color: #fff;
+    font-size: 28px;
+    background-color: #0a9077b3;
+    border: 1px solid;
+    padding: 20px 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/*Fim do main/container-principal*/
+
+/*Inicio do main/conteiner-secundario*/
+.container-secundario{
+    width: 100%;
+}
+.titulo{
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+    color:#3d3d3d;
+    line-height: 32px;
+}
+/*Fim do main/container-secundario*/
+
+/*Inicio do main/container-imagens*/
+.container-imagens{
+    width: 100%;
+}
+.imagens{
+    max-width: 50%;
+    display: flex;
+    margin: auto;
+    word-break: break-all;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.quarto{
+    max-width: calc(100% / 3);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.quarto img{
+    max-width: 90%;
+    opacity: 0.7;
+}
+.quarto img:hover{
+    opacity: 1;
+}
+.quarto a{
+    text-decoration: none;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+.quarto a p{
+    width: 90%;
+    margin: 20px 0;
+}
+/*Fim do main/container-imagens*/
+
+/*Inicio do main/container-rotas*/
+
+/* Não teve nada a ser feito nesse container*/
+/*OBS o local mostrado no mapa é apenas para demonstrção*/
+
+/*Fim do main/container-rotas*/
+
+/*Inicio do main/container-sobre-a-pousada*/
+.sobre-pousada{
+    width: 100%;
+}
+.container-sobre-a-pousada{
+    max-width: 1024px;
+    min-width: 900px;
+    height: fit-content;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.informacao{
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(1024px /2);
+    min-width: 50%;
+    padding: 30px;
+}
+.textos{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.imagem img{
+    width: 120px;
+    height: 120px;
+    margin: 0 5px;
+}
+/*Fim do main/container-sobre-a-pousada*/
+
+/*Inicio do footer/container-rodape*/
+.container-rodape{
+    background-color: #49997d;
+    width: 100%;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contatos{
+    margin: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 220px;
+    padding: 20px 0;
+}
+.texto-footer{
+    text-align: center;
+}
+span{
+    color: #fff;
+    font-weight: bold;
+}
