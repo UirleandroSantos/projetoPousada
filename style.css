@@ -181,7 +181,7 @@ footer{
 .contato{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-center;
     gap: 10px;
     width: 220px;
     padding: 20px 0;
